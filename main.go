@@ -28,6 +28,6 @@ func main(){
 	err = json.Unmarshal(body, &x)
 
 	for i := 0; i < len(x); i++ {
-		fmt.Printf(" \n------------------\nRepo Name:"+x[i].Ad +"\nRepo Desc: "+ x[i].Aciklama +"\nRepo Full Url:"+ x[i].Url)
+		fmt.Printf(" \n------------------\nRepo Name: "+x[i].Ad +"\nRepo Desc: "+ x[i].Aciklama +"\nRepo Full Url: "+ x[i].Url)
 	}
 }
