@@ -7,7 +7,7 @@ import(
 )
 
 func main(){
-
+	
 	githubusername := "enesbuyuk"
 
 	type GitApi []struct {
@@ -27,8 +27,7 @@ func main(){
 
 	err = json.Unmarshal(body, &f)
 
-	fmt.Printf("%+v", f[0].Ad)
 	for i := 0; i < len(f); i++ {
-		fmt.Println(f[i].Ad)
+		fmt.Printf(" \n------------------\nRepo Name:"+f[i].Ad +"\nRepo Desc: "+ f[i].Aciklama +"\nRepo Full Url:"+ f[i].Url)
 	}
 }
