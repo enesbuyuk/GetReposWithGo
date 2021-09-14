@@ -23,11 +23,11 @@ func main(){
 
 	body, _ := ioutil.ReadAll(gitrepurl.Body)
 
-	var f GitApi
+	var x GitApi
 
-	err = json.Unmarshal(body, &f)
+	err = json.Unmarshal(body, &x)
 
-	for i := 0; i < len(f); i++ {
-		fmt.Printf(" \n------------------\nRepo Name:"+f[i].Ad +"\nRepo Desc: "+ f[i].Aciklama +"\nRepo Full Url:"+ f[i].Url)
+	for i := 0; i < len(x); i++ {
+		fmt.Printf(" \n------------------\nRepo Name:"+x[i].Ad +"\nRepo Desc: "+ x[i].Aciklama +"\nRepo Full Url:"+ x[i].Url)
 	}
 }
