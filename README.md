@@ -1,5 +1,5 @@
 # GetReposWithGo
-How to get Github repositories with golang? This project gets Github repos with go.
+How to get Github repositories with golang? This project retrieves GitHub repositories using Go.
 
 ## USAGE
 Change "githubusername" variable to your Github username.
